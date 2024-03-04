@@ -15,7 +15,7 @@ const AboutPage = () => {
 
   const experienceRef = useRef();
   const isExperienceRefInView = useInView(experienceRef, { margin: "-100px" });
-
+ 
   return (
     <motion.div
       className="h-full"
