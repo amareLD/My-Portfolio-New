@@ -1614,7 +1614,7 @@ const Brain = ({ scrollYProgress }) => {
               </g>
             </g>
           </g>
-        </g>
+        </g> 
       </svg>
     </div>
   );

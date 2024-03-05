@@ -1,8 +1,8 @@
-"use client";
-import Brain from "@/components/brain";
-import { motion, useInView, useScroll } from "framer-motion";
-import Image from "next/image";
-import { useRef } from "react";
+'use client';
+import Brain from '@/components/brain';
+import { motion, useInView, useScroll } from 'framer-motion';
+import Image from 'next/image';
+import { useRef } from 'react';
 
 const AboutPage = () => {
   const containerRef = useRef();
@@ -11,16 +11,16 @@ const AboutPage = () => {
 
   const skillRef = useRef();
   // const isSkillRefInView = useInView(skillRef, {once:true});
-  const isSkillRefInView = useInView(skillRef, { margin: "-100px" });
+  const isSkillRefInView = useInView(skillRef, { margin: '-100px' });
 
   const experienceRef = useRef();
-  const isExperienceRefInView = useInView(experienceRef, { margin: "-100px" });
- 
+  const isExperienceRefInView = useInView(experienceRef, { margin: '-100px' });
+
   return (
     <motion.div
       className="h-full"
-      initial={{ y: "-200vh" }}
-      animate={{ y: "0%" }}
+      initial={{ y: '-200vh' }}
+      animate={{ y: '0%' }}
       transition={{ duration: 1 }}
     >
       {/* CONTAINER */}
@@ -31,20 +31,27 @@ const AboutPage = () => {
           <div className="flex flex-col gap-12 justify-center">
             {/* BIOGRAPHY IMAGE */}
             <Image
-              src="https://images.pexels.com/photos/775358/pexels-photo-775358.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src="/me.JPG"
               alt=""
-              width={112}
-              height={112}
-              className="w-28 h-28 rounded-full object-cover"
+              width={150}
+              height={150}
+              className="w-25 h-25 rounded-full object-cover shadow-xl"
             />
             {/* BIOGRAPHY TITLE */}
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             {/* BIOGRAPHY DESC */}
             <p className="text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              harum quibusdam cupiditate nobis accusamus sed aut aperiam,
-              reiciendis numquam! Voluptas voluptatibus obcaecati dolore itaque
-              suscipit! Vel doloremque numquam quam nihil.
+            I’m an undergraduate at the University
+of Sri Jayewardenepura in the Faculty
+of Technology. I have good knowledge,
+experience, and excitement in Full-stack
+development mostly in JavaScript-
+related technologies and UI/UX design.
+So currently I have a 3.26 GPA. I’m
+always trying to update with new
+technologies and continuously learning
+all the things currently doing as well as
+what I would like to do in the future.
             </p>
             {/* BIOGRAPHY QUOTE */}
             <span className="italic">
@@ -69,8 +76,8 @@ const AboutPage = () => {
             {/* BIOGRAPHY SCROLL SVG */}
             <motion.svg
               initial={{ opacity: 0.2, y: 0 }}
-              animate={{ opacity: 1, y: "10px" }}
-              transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
+              animate={{ opacity: 1, y: '10px' }}
+              transition={{ repeat: Infinity, duration: 3, ease: 'easeInOut' }}
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +101,7 @@ const AboutPage = () => {
           <div className="flex flex-col gap-12 justify-center" ref={skillRef}>
             {/* SKILL TITLE */}
             <motion.h1
-              initial={{ x: "-300px" }}
+              initial={{ x: '-300px' }}
               animate={isSkillRefInView ? { x: 0 } : {}}
               transition={{ delay: 0.2 }}
               className="font-bold text-2xl"
@@ -103,7 +110,7 @@ const AboutPage = () => {
             </motion.h1>
             {/* SKILL LIST */}
             <motion.div
-              initial={{ x: "-300px" }}
+              initial={{ x: '-300px' }}
               animate={isSkillRefInView ? { x: 0 } : {}}
               className="flex gap-4 flex-wrap"
             >
@@ -186,8 +193,8 @@ const AboutPage = () => {
             {/* SKILL SCROLL SVG */}
             <motion.svg
               initial={{ opacity: 0.2, y: 0 }}
-              animate={{ opacity: 1, y: "10px" }}
-              transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
+              animate={{ opacity: 1, y: '10px' }}
+              transition={{ repeat: Infinity, duration: 3, ease: 'easeInOut' }}
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -214,8 +221,8 @@ const AboutPage = () => {
           >
             {/* EXPERIENCE TITLE */}
             <motion.h1
-              initial={{ x: "-300px" }}
-              animate={isExperienceRefInView ? { x: "0" } : {}}
+              initial={{ x: '-300px' }}
+              animate={isExperienceRefInView ? { x: '0' } : {}}
               transition={{ delay: 0.2 }}
               className="font-bold text-2xl"
             >
@@ -223,8 +230,8 @@ const AboutPage = () => {
             </motion.h1>
             {/* EXPERIENCE LIST */}
             <motion.div
-              initial={{ x: "-300px" }}
-              animate={isExperienceRefInView ? { x: "0" } : {}}
+              initial={{ x: '-300px' }}
+              animate={isExperienceRefInView ? { x: '0' } : {}}
               className=""
             >
               {/* EXPERIENCE LIST ITEM */}
@@ -238,7 +245,7 @@ const AboutPage = () => {
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
                     I led web development, offering expertise in JavaScript
-                    frameworks.{" "}
+                    frameworks.{' '}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
@@ -281,11 +288,11 @@ const AboutPage = () => {
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
                     I spearheaded React-based application development,
-                    leveraging advanced skills.{" "}
+                    leveraging advanced skills.{' '}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    2019 - 2024{" "}
+                    2019 - 2024{' '}
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
@@ -299,16 +306,16 @@ const AboutPage = () => {
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Freelancer{" "}
+                    Freelancer{' '}
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
                     I provided web solutions, applying a range of technologies
-                    to address client requirements.{" "}
+                    to address client requirements.{' '}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    2010 - 2019{" "}
+                    2010 - 2019{' '}
                   </div>
                 </div>
                 {/* CENTER */}
