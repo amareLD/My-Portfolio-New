@@ -108,6 +108,9 @@ const Navbar = () => {
         <Link href="/">
           <Image src="/linkedin.png" alt="" width={24} height={24} />
         </Link>
+        <Link href="/">
+          <Image src="/discord.png" alt="" width={24} height={24} />
+        </Link>
       </div>
       {/* RESPONSIVE MENU */}
       <div className="md:hidden">

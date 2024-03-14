@@ -13,8 +13,8 @@ const Homepage = () => {
     >
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
         {/* IMAGE CONTAINER */}
-        <div className="h-1/2 lg:h-full lg:w-1/2 relative">
-          <Image src="/hero.png" alt="" fill className="object-contain" />
+        <div className="h-1/2 lg:h-full lg:w-1/2 relative     ">
+          <Image src="/hero.png" alt="" fill className="object-contain  overflow-hidden hover:scale-110 transition-transform duration-300  rounded-lg" />
         </div>
         {/* TEXT CONTAINER */}
         <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">

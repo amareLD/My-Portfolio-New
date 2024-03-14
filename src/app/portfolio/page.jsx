@@ -8,15 +8,17 @@ const items = [
   {
     id: 1,
     color: 'from-red-300 to-blue-300',
-    title: 'React Commerce',
+    title: 'Attire Avenue',
+    subtittle: 'E-Commerce Web application',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
     img: 'https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load',
-    link: 'https://lama.dev',
+    link: 'https://mern-attire-avenue-app-8606.onrender.com/',
   },
   {
     id: 2,
     color: 'from-blue-300 to-violet-300',
-    title: 'Next.js Medium Blog',
+    title: 'theRealblog',
+    subtittle: 'Blog Full-stack App',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
     img: 'https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load',
     link: 'https://lama.dev',
@@ -24,7 +26,8 @@ const items = [
   {
     id: 3,
     color: 'from-violet-300 to-purple-300',
-    title: 'Vanilla Book App',
+    title: 'Reelfactz',
+    subtittle: 'E-Commerce Web application',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
     img: 'https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load',
     link: 'https://lama.dev',
@@ -32,7 +35,8 @@ const items = [
   {
     id: 4,
     color: 'from-purple-300 to-red-300',
-    title: 'Spotify Music App',
+    title: 'Issue-Tracker',
+    subtittle: 'Full-stack Web App to track the issue',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
     img: 'https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     link: 'https://lama.dev',
@@ -53,7 +57,7 @@ const PortfolioPage = () => {
       transition={{ duration: 1 }}
     >
       <div className="h-[600vh] relative" ref={ref}>
-        <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center">
+        <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-9xl text-center">
           My Works
         </div>
         <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
@@ -64,18 +68,35 @@ const PortfolioPage = () => {
                 className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
                 key={item.id}
               >
-                <div className="flex flex-col gap-8 text-white">
+                <div
+                  className="  flex flex-col gap-4 text-white"
+                  style={{ paddingTop: '75px', paddingBottom: '100px' }}
+                >
                   <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">
                     {item.title}
                   </h1>
-                  <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
+                  {/* <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
                     <Image src={item.img} alt="" fill />
+                  </div> */}
+
+                  <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px] shadow-xl rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300">
+                    <Image
+                      src={item.img}
+                      alt=""
+                      fill
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                     {item.desc}
                   </p>
+                  {/* <Link href={item.link} className="flex justify-end">
+                    <button className="p-1 text-sm md:p-2 md:text-sm lg:p-4 lg:text-lg bg-white text-gray-600 font-semibold m-2 rounded">
+                      See Demo
+                    </button>
+                  </Link> */}
                   <Link href={item.link} className="flex justify-end">
-                    <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">
+                    <button className="p-1 text-sm md:p-2 md:text-sm lg:p-4 lg:text-md bg-white text-gray-600 font-bold m-2 rounded transition duration-300 ease-in-out hover:bg-gray-200 hover:text-gray-800">
                       See Demo
                     </button>
                   </Link>
@@ -102,7 +123,7 @@ const PortfolioPage = () => {
             </defs>
             <text fill="#000">
               <textPath xlinkHref="#circlePath" className="text-xl">
-                Front-end Developer and UI Designer
+                Full-stack Developer and UI Designer
               </textPath>
             </text>
           </motion.svg>
