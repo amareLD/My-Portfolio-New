@@ -35,7 +35,7 @@ const AboutPage = () => {
               alt=""
               width={150}
               height={150}
-              className="w-25 h-25 rounded-full object-cover shadow-xl"
+              className="w-25 h-25 rounded-full object-cover shadow-xl  overflow-hidden hover:scale-110 transition-transform duration-300"
             />
             {/* BIOGRAPHY TITLE */}
             <h1 className="font-bold text-2xl">BIOGRAPHY🧬</h1>
