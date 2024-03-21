@@ -130,7 +130,7 @@ const Homepage = () => {
             that reflect my commitment to excellence."
           </p>
           {/* BUTTONS */}
-          <div className="flex flex-col lg:flex-row gap-4">
+          <div className="flex flex-col lg:flex-row gap-4 mb-10">
             <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white mb-2 lg:mb-0">
               View My Work
             </button>

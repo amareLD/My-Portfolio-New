@@ -7,7 +7,7 @@ import { useRef } from 'react';
 const items = [
   {
     id: 1,
-    color: 'from-red-300 to-blue-300',
+    color: 'from-purple-300 to-purple-600',
     title: 'Attire Avenue',
     subtittle: 'E-Commerce Web application',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
@@ -16,7 +16,7 @@ const items = [
   },
   {
     id: 2,
-    color: 'from-blue-300 to-violet-300',
+    color: 'from-purple-600 to-red-600',
     title: 'theRealblog',
     subtittle: 'Blog Full-stack App',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
@@ -25,7 +25,7 @@ const items = [
   },
   {
     id: 3,
-    color: 'from-violet-300 to-purple-300',
+    color: 'from-red-600 to-violet-900',
     title: 'Reelfactz',
     subtittle: 'E-Commerce Web application',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
@@ -34,7 +34,7 @@ const items = [
   },
   {
     id: 4,
-    color: 'from-purple-300 to-red-300',
+    color: 'from-violet-900 to-pink-600',
     title: 'Issue-Tracker',
     subtittle: 'Full-stack Web App to track the issue',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
@@ -62,7 +62,7 @@ const PortfolioPage = () => {
         </div>
         <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
           <motion.div style={{ x }} className="flex">
-            <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-900 to-red-300" />
+            <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-blue-900 to-purple-300" />
             {items.map((item) => (
               <div
                 className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
@@ -123,7 +123,7 @@ const PortfolioPage = () => {
             </defs>
             <text fill="#000">
               <textPath xlinkHref="#circlePath" className="text-xl">
-                Full-stack Developer and UI Designer
+                Full-stack Developer and UI/UX Designer
               </textPath>
             </text>
           </motion.svg>
