@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output:'export',
+  output: 'export',
   images: {
+    loader: 'custom',
+    loaderFile: './loader.js',
     domains: ['images.pexels.com', 'www.instagram.com'],
   },
 };
