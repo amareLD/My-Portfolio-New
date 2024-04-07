@@ -92,7 +92,6 @@ const Homepage = () => {
           >
             Hello👋 , I'm <span className="text-white">Lahiru Darshana.</span>
             <br />
-            
             <motion.div
               variants={fadeIn('up', 0.4)}
               initial="hidden"
@@ -131,10 +130,10 @@ const Homepage = () => {
           </p>
           {/* BUTTONS */}
           <div className="flex flex-col lg:flex-row gap-4 mb-10">
-            <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white mb-2 lg:mb-0">
+            <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white mb-2 lg:mb-0 transition-colors hover:bg-teal-400 hover:text-black hover:ring-black">
               View My Work
             </button>
-            <button className="p-4 rounded-lg ring-1 ring-black">
+            <button className="p-4 rounded-lg ring-1 ring-white bg-white transition-colors hover:bg-teal-400 hover:text-white hover:ring-white">
               Contact Me
             </button>
           </div>
