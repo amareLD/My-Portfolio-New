@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import NavLink from './navlink';
 import { motion } from 'framer-motion';
+import Button from './Button';
 
 const links = [
   { url: '/', title: 'Home' },
@@ -71,12 +72,15 @@ const Navbar = () => {
   return (
     <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
       {/* LINKS */}
+      
       <div className="hidden md:flex gap-4 w-1/3">
         {links.map((link) => (
           <NavLink link={link} key={link.title} />
         ))}
+        
       </div>
       {/* LOGO */}
+
       <div className="md:hidden lg:flex xl:w-1/3 xl:justify-center">
         <Link
           href="/"
@@ -87,87 +91,88 @@ const Navbar = () => {
             _D
           </span>
         </Link>
+        <Button/>
       </div>
       {/* SOCIAL */}
       <div className="hidden md:flex gap-4 w-1/3">
-  <Link href="https://github.com/amareLD">
-    <div className="relative group shadow-md">
-      <Image
-        src="/github.png"
-        alt=""
-        width={24}
-        height={24}
-        className="transition duration-300 ease-in-out transform group-hover:scale-110"
-      />
-    </div>
-  </Link>
-  <Link href="https://www.artstation.com/lahirudarshana8">
-    <div className="relative group shadow-md">
-      <Image
-        src="/artstation.png"
-        alt=""
-        width={24}
-        height={24}
-        className="transition duration-300 ease-in-out transform group-hover:scale-110"
-      />
-    </div>
-  </Link>
-  <Link href="https://www.instagram.com/lahiru_____d/">
-    <div className="relative group shadow-md">
-      <Image
-        src="/instagram.png"
-        alt=""
-        width={24}
-        height={24}
-        className="transition duration-300 ease-in-out transform group-hover:scale-110"
-      />
-    </div>
-  </Link>
-  <Link href="https://web.facebook.com/profile.php?id=100008853782648">
-    <div className="relative group shadow-md">
-      <Image
-        src="/facebook.png"
-        alt=""
-        width={24}
-        height={24}
-        className="transition duration-300 ease-in-out transform group-hover:scale-110"
-      />
-    </div>
-  </Link>
-  <Link href="https://www.tiktok.com/@lahiru_d">
-    <div className="relative group shadow-md">
-      <Image
-        src="/tik-tok.png"
-        alt=""
-        width={24}
-        height={24}
-        className="transition duration-300 ease-in-out transform group-hover:scale-110"
-      />
-    </div>
-  </Link>
-  <Link href="https://www.linkedin.com/in/lahiru-darshana-70889727b/">
-    <div className="relative group shadow-md">
-      <Image
-        src="/linkedin.png"
-        alt=""
-        width={24}
-        height={24}
-        className="transition duration-300 ease-in-out transform group-hover:scale-110"
-      />
-    </div>
-  </Link>
-  <Link href="https://discord.com/channels/978967354107109437/978967354820157492">
-    <div className="relative group shadow-md">
-      <Image
-        src="/discord.png"
-        alt=""
-        width={24}
-        height={24}
-        className="transition duration-300 ease-in-out transform group-hover:scale-110"
-      />
-    </div>
-  </Link>
-</div>
+        <Link href="https://github.com/amareLD">
+          <div className="relative group shadow-md">
+            <Image
+              src="/github.png"
+              alt=""
+              width={24}
+              height={24}
+              className="transition duration-300 ease-in-out transform group-hover:scale-110"
+            />
+          </div>
+        </Link>
+        <Link href="https://www.artstation.com/lahirudarshana8">
+          <div className="relative group shadow-md">
+            <Image
+              src="/artstation.png"
+              alt=""
+              width={24}
+              height={24}
+              className="transition duration-300 ease-in-out transform group-hover:scale-110"
+            />
+          </div>
+        </Link>
+        <Link href="https://www.instagram.com/lahiru_____d/">
+          <div className="relative group shadow-md">
+            <Image
+              src="/instagram.png"
+              alt=""
+              width={24}
+              height={24}
+              className="transition duration-300 ease-in-out transform group-hover:scale-110"
+            />
+          </div>
+        </Link>
+        <Link href="https://web.facebook.com/profile.php?id=100008853782648">
+          <div className="relative group shadow-md">
+            <Image
+              src="/facebook.png"
+              alt=""
+              width={24}
+              height={24}
+              className="transition duration-300 ease-in-out transform group-hover:scale-110"
+            />
+          </div>
+        </Link>
+        <Link href="https://www.tiktok.com/@lahiru_d">
+          <div className="relative group shadow-md">
+            <Image
+              src="/tik-tok.png"
+              alt=""
+              width={24}
+              height={24}
+              className="transition duration-300 ease-in-out transform group-hover:scale-110"
+            />
+          </div>
+        </Link>
+        <Link href="https://www.linkedin.com/in/lahiru-darshana-70889727b/">
+          <div className="relative group shadow-md">
+            <Image
+              src="/linkedin.png"
+              alt=""
+              width={24}
+              height={24}
+              className="transition duration-300 ease-in-out transform group-hover:scale-110"
+            />
+          </div>
+        </Link>
+        <Link href="https://discord.com/channels/978967354107109437/978967354820157492">
+          <div className="relative group shadow-md">
+            <Image
+              src="/discord.png"
+              alt=""
+              width={24}
+              height={24}
+              className="transition duration-300 ease-in-out transform group-hover:scale-110"
+            />
+          </div>
+        </Link>
+      </div>
       {/* RESPONSIVE MENU */}
       <div className="md:hidden">
         {/* MENU BUTTON */}

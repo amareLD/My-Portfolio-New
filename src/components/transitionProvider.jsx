@@ -5,6 +5,7 @@ import Navbar from './navbar';
 import Footer from './footer';
 import { motion } from 'framer-motion';
 import { usePathname } from 'next/navigation';
+import Button from './Button';
 
 const TransitionProvider = ({ children }) => {
   const pathName = usePathname();

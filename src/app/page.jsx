@@ -62,6 +62,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 import { fadeIn } from '@/components/varients';
+import Button from '../components/Button';
 
 const Homepage = () => {
   return (
@@ -92,31 +93,33 @@ const Homepage = () => {
           >
             Hello👋 , I'm <span className="text-white">Lahiru Darshana.</span>
             <br />
-            <motion.div
-              variants={fadeIn('up', 0.4)}
-              initial="hidden"
-              whileInView={'show'}
-              viewport={{ once: false, amount: 0.7 }}
-              className="mb-6 text-[36px] lg:text-[40px] font-secondary
+          
+              <motion.div
+                variants={fadeIn('up', 0.4)}
+                initial="hidden"
+                whileInView={'show'}
+                viewport={{ once: false, amount: 0.7 }}
+                className="mb-6 text-[36px] lg:text-[40px] font-secondary  h-24
           font-semibold uppercase leading-[1]"
-            >
-              <span className="text-white mr-4"> I am a </span>
-              <TypeAnimation
-                sequence={[
-                  'Full-stack Developer',
-                  2000,
-                  'UI/UX Designer',
-                  2000,
-                  'Web Designer',
-                  2000,
-                ]}
-                speed={50}
-                className="text-accent"
-                wrapper="span"
-                repeat={Infinity}
-              />
-                 
-            </motion.div>
+              >
+                <span className="text-white mr-4"> I am a </span>
+                <TypeAnimation
+                  sequence={[
+                    'Full-stack Developer',
+                    2000,
+                    'UI/UX Designer',
+                    2000,
+                    'Web Designer',
+                    2000,
+                  ]}
+                  speed={50}
+                  className="text-accent"
+                  wrapper="span"
+                  repeat={Infinity}
+                />
+                   
+              </motion.div>
+         
           </h1>
 
           {/* DESC */}
