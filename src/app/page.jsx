@@ -72,18 +72,27 @@ const Homepage = () => {
       animate={{ y: '0%' }}
       transition={{ duration: 1 }}
     >
-      <div className="flex flex-col lg:flex-row   ">
+      <div className="flex flex-col lg:flex-row  pb-10  ">
         {/* IMAGE CONTAINER */}
-        <div className="w-3/5 lg:w-1/2 lg:pr-8 mb-8 lg:mb-0  ">
+        <div className="relative w-full md:w-3/5 lg:w-1/2 lg:pr-8 mb-8 lg:mb-0 ">
           <Image
-            src="/hero.svg"
+            src="/portfoliome.png"
             alt="hero"
             layout="responsive"
             width={100}
             height={100}
-            className=" object-contain  overflow-hidden hover:scale-110 transition-transform duration-300  rounded-lg"
+            className="  bottom-0 left-0 md:-bottom-110 md:-left-20 object-contain overflow-hidden hover:scale-110 transition-transform duration-300 rounded-lg"
+          />
+          <Image
+            src="/hero1.png"
+            alt="hero"
+            layout="responsive"
+            width={100}
+            height={100}
+            className="absolute  bottom-0 left-0 md:-bottom-110 md:-left-30 object-contain overflow-hidden hover:scale-110 transition-transform duration-300 rounded-lg"
           />
         </div>
+
         {/* TEXT CONTAINER */}
         <div className="w-full lg:w-1/2 flex flex-col justify-center  ">
           {/*NAME*/}
@@ -93,33 +102,31 @@ const Homepage = () => {
           >
             Hello👋 , I'm <span className="text-white">Lahiru Darshana.</span>
             <br />
-          
-              <motion.div
-                variants={fadeIn('up', 0.4)}
-                initial="hidden"
-                whileInView={'show'}
-                viewport={{ once: false, amount: 0.7 }}
-                className="mb-6 text-[36px] lg:text-[40px] font-secondary  h-24
+            <motion.div
+              variants={fadeIn('up', 0.4)}
+              initial="hidden"
+              whileInView={'show'}
+              viewport={{ once: false, amount: 0.7 }}
+              className="mb-6 text-[36px] lg:text-[40px] font-secondary  h-24
           font-semibold uppercase leading-[1]"
-              >
-                <span className="text-white mr-4"> I am a </span>
-                <TypeAnimation
-                  sequence={[
-                    'Full-stack Developer',
-                    2000,
-                    'UI/UX Designer',
-                    2000,
-                    'Web Designer',
-                    2000,
-                  ]}
-                  speed={50}
-                  className="text-accent"
-                  wrapper="span"
-                  repeat={Infinity}
-                />
-                   
-              </motion.div>
-         
+            >
+              <span className="text-white mr-4"> I am a </span>
+              <TypeAnimation
+                sequence={[
+                  'Full-stack Developer',
+                  2000,
+                  'UI/UX Designer',
+                  2000,
+                  'Web Designer',
+                  2000,
+                ]}
+                speed={50}
+                className="text-accent"
+                wrapper="span"
+                repeat={Infinity}
+              />
+                 
+            </motion.div>
           </h1>
 
           {/* DESC */}

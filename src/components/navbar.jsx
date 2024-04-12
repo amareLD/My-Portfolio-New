@@ -173,7 +173,7 @@ const Navbar = () => {
         <Button />
       </div>
       {/* RESPONSIVE MENU */}
-      <div className="md:hidden lg:hidden">
+      <div className="md:hidden lg:hidden ">
         {/* MENU BUTTON */}
         <button
           className="w-10 h-8 flex flex-col justify-between z-50 relative"
@@ -201,7 +201,7 @@ const Navbar = () => {
             variants={listVariants}
             initial="closed"
             animate="opened"
-            className="absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl z-40"
+            className="absolute top-0 left-0 w-screen h-screen bg-black bg-opacity-90 text-white flex flex-col items-center justify-center gap-8 text-4xl z-40"
           >
             {links.map((link) => (
               <motion.div
@@ -212,6 +212,85 @@ const Navbar = () => {
                 <Link href={link.url}>{link.title}</Link>
               </motion.div>
             ))}
+            <div className="bg-white bg-opacity-90 h-20 md:h-16 items-center justify-center flex gap-3 md:w-2/3 w-full rounded p-0.5">
+              <Link href="https://github.com/amareLD">
+                <div className="relative   group ">
+                  <Image
+                    src="/github.png"
+                    alt=""
+                    width={24}
+                    height={24}
+                    className="transition duration-300 ease-in-out transform group-hover:scale-150 "
+                  />
+                </div>
+              </Link>
+              <Link href="https://www.artstation.com/lahirudarshana8">
+                <div className="relative   group ">
+                  <Image
+                    src="/artstation.png"
+                    alt=""
+                    width={24}
+                    height={24}
+                    className="transition duration-300 ease-in-out transform group-hover:scale-150"
+                  />
+                </div>
+              </Link>
+              <Link href="https://www.instagram.com/lahiru_____d/">
+                <div className="relative   group ">
+                  <Image
+                    src="/instagram.png"
+                    alt=""
+                    width={24}
+                    height={24}
+                    className="transition duration-300 ease-in-out transform group-hover:scale-150"
+                  />
+                </div>
+              </Link>
+              <Link href="https://web.facebook.com/profile.php?id=100008853782648">
+                <div className="relative   group ">
+                  <Image
+                    src="/facebook.png"
+                    alt=""
+                    width={24}
+                    height={24}
+                    className="transition duration-300 ease-in-out transform group-hover:scale-150"
+                  />
+                </div>
+              </Link>
+              <Link href="https://www.tiktok.com/@lahiru_d">
+                <div className="relative   group ">
+                  <Image
+                    src="/tik-tok.png"
+                    alt=""
+                    width={24}
+                    height={24}
+                    className="transition duration-300 ease-in-out transform group-hover:scale-150"
+                  />
+                </div>
+              </Link>
+              <Link href="https://www.linkedin.com/in/lahiru-darshana-70889727b/">
+                <div className="relative   group ">
+                  <Image
+                    src="/linkedin.png"
+                    alt=""
+                    width={24}
+                    height={24}
+                    className="transition duration-300 ease-in-out transform group-hover:scale-150"
+                  />
+                </div>
+              </Link>
+              <Link href="https://discord.com/channels/978967354107109437/978967354820157492">
+                <div className="relative   group ">
+                  <Image
+                    src="/discord.png"
+                    alt=""
+                    width={24}
+                    height={24}
+                    className="transition duration-300 ease-in-out transform group-hover:scale-150"
+                  />
+                </div>
+              </Link>
+            </div>
           </motion.div>
         )}
       </div>
