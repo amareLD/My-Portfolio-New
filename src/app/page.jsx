@@ -67,29 +67,29 @@ import Button from '../components/Button';
 const Homepage = () => {
   return (
     <motion.div
-      className="min-h-screen flex flex-col justify-center px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48   bg-gradient-to-b from-red-50 to-teal-300"
+      className=" flex flex-col justify-center px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48   bg-gradient-to-b from-red-50 to-teal-300"
       initial={{ y: '-200vh' }}
       animate={{ y: '0%' }}
       transition={{ duration: 1 }}
     >
-      <div className="flex flex-col lg:flex-row  pb-10  ">
+      <div className="flex flex-col lg:flex-row  pb-10 mb-20">
         {/* IMAGE CONTAINER */}
-        <div className="relative w-full md:w-3/5 lg:w-1/2 lg:pr-8 mb-8 lg:mb-0 ">
+        <div className="relative w-full md:w-3/5 lg:w-1/2 md:-bottom- lg:pr-8 mb-8 lg:mb-0  ">
           <Image
             src="/portfoliome.png"
             alt="hero"
-            layout="responsive"
-            width={100}
-            height={100}
-            className="  bottom-0 left-0 md:-bottom-110 md:-left-20 object-contain overflow-hidden hover:scale-110 transition-transform duration-300 rounded-lg"
+            layout=""
+            width={550}
+            height={550}
+            className="absolute    bottom-0 left-0 md:-bottom-32 md:-left-32 object-contain overflow-hidden "
           />
           <Image
-            src="/hero1.png"
+            src="/hero3.png"
             alt="hero"
-            layout="responsive"
-            width={100}
-            height={100}
-            className="absolute  bottom-0 left-0 md:-bottom-110 md:-left-30 object-contain overflow-hidden hover:scale-110 transition-transform duration-300 rounded-lg"
+            layout=""
+            width={350}
+            height={350}
+            className="absolute p-0 m-0   md:-bottom-32 md:-left-0 object-contain overflow-hidden hover:scale-110 transition-transform duration-300 rounded-lg"
           />
         </div>
 
