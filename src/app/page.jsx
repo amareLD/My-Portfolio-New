@@ -94,7 +94,7 @@ const Homepage = () => {
         </div>
 
         {/* TEXT CONTAINER */}
-        <div className="w-full lg:w-1/2 flex flex-col justify-center  ">
+        <div className="w-full lg:w-1/2 flex flex-col justify-center pt-10  ">
           {/*NAME*/}
           <h1
             className="text-4xl md:text-6xl font-bold mb-6"
@@ -139,7 +139,7 @@ const Homepage = () => {
             that reflect my commitment to excellence."
           </p>
           {/* BUTTONS */}
-          <div className="flex flex-col lg:flex-row gap-4 mb-10">
+          <div className="flex flex-col lg:flex-row gap-4 mt-0">
             <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white mb-2 lg:mb-0 transition-colors hover:bg-teal-400 hover:text-black hover:ring-black">
               View My Work
             </button>
