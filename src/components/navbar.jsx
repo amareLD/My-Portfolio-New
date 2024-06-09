@@ -83,10 +83,12 @@ const Navbar = () => {
       <div className="md:hidden lg:flex xl:w-1/3 xl:justify-center">
         <Link
           href="/"
-          className="text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center"
+          className="text-sm text-white bg-black rounded-md p-1 font-semibold flex items-center justify-center ring-1 ring-white transition-colors hover:bg-Black hover:text-black hover:ring-white group"
         >
-          <span className="text-white mr-1">Lahiru</span>
-          <span className="w-12 h-8 rounded bg-white text-black flex items-center justify-center">
+          <span className="w-12 h-8 mr-1 rounded flex items-center justify-center bg-black text-white group-hover:bg-white group-hover:text-black transition-colors">
+            Lahiru
+          </span>
+          <span className="w-12 h-8 rounded bg-white text-black flex items-center justify-center group-hover:bg-black group-hover:text-white transition-colors">
             _D
           </span>
         </Link>

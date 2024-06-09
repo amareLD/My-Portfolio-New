@@ -63,6 +63,7 @@ import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 import { fadeIn } from '@/components/varients';
 import Button from '../components/Button';
+import Link from 'next/link';
 
 const Homepage = () => {
   return (
@@ -140,12 +141,17 @@ const Homepage = () => {
           </p>
           {/* BUTTONS */}
           <div className="flex flex-col lg:flex-row gap-4 mt-0">
-            <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white mb-2 lg:mb-0 transition-colors hover:bg-teal-400 hover:text-black hover:ring-black">
+          <Link href="/portfolio" >
+          <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white mb-2 lg:mb-0 transition-colors hover:bg-teal-400 hover:text-black hover:ring-black">
               View My Work
             </button>
-            <button className="p-4 rounded-lg ring-1 ring-white bg-white transition-colors hover:bg-teal-400 hover:text-white hover:ring-white">
-              Contact Me
-            </button>
+          </Link>
+           
+            <Link href="/contact" >
+              <button className="p-4 rounded-lg ring-1 ring-white bg-white transition-colors hover:bg-teal-400 hover:text-white hover:ring-white">
+                Contact Me
+              </button>
+            </Link>
           </div>
         </div>
       </div>
