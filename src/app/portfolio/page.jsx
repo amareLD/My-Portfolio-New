@@ -1,8 +1,14 @@
 'use client';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import Image from 'next/image';
 import Link from 'next/link';
+import ReactCarousel from '@/components/reactCarousel';
 import { useRef } from 'react';
+
+const images2 = [
+  { src: '/path/to/image4.jpg', alt: 'Image 4', caption: 'Image 4' },
+  { src: '/path/to/image5.jpg', alt: 'Image 5', caption: 'Image 5' },
+  { src: '/path/to/image6.jpg', alt: 'Image 6', caption: 'Image 6' },
+];
 
 const items = [
   {
@@ -13,6 +19,13 @@ const items = [
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
     img: 'https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load',
     link: 'https://mern-attire-avenue-app-8606.onrender.com/',
+    images: [
+      { src: '/attireavenue/1hompage.png', alt: 'Image 1', caption: 'Home page' },
+      { src: '/attireavenue/1I.png', alt: 'Image 2', caption: ' Footer' },
+      { src: '/attireavenue/2productcatalouge.png', alt: 'Image 3', caption: 'Product cards' },
+      { src: '/attireavenue/3sigin.png', alt: 'Image 2', caption: 'Signin Page' },
+      { src: '/attireavenue/4cart.png', alt: 'Image 3', caption: 'Shoping cart' },
+    ],
   },
   {
     id: 2,
@@ -20,8 +33,12 @@ const items = [
     title: 'theRealblog',
     subtittle: 'Blog Full-stack App',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
-    img: 'https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load',
     link: 'https://lama.dev',
+    images: [
+      { src: '/path/to/image1.jpg', alt: 'Image 4', caption: 'Image 4' },
+      { src: '/path/to/image2.jpg', alt: 'Image 5', caption: 'Image 5' },
+      { src: '/path/to/image3.jpg', alt: 'Image 6', caption: 'Image 6' },
+    ],
   },
   {
     id: 3,
@@ -29,8 +46,13 @@ const items = [
     title: 'Reelfactz',
     subtittle: 'E-Commerce Web application',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
-    img: 'https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load',
     link: 'https://lama.dev',
+    images: [
+      { src: '/path/to/image1.jpg', alt: 'Image 1', caption: 'Image 1' },
+      { src: '/path/to/image2.jpg', alt: 'Image 2', caption: 'Image 2' },
+      { src: '/path/to/image3.jpg', alt: 'Image 3', caption: 'Image 3' },
+    ],
+
   },
   {
     id: 4,
@@ -38,8 +60,13 @@ const items = [
     title: 'Issue-Tracker',
     subtittle: 'Full-stack Web App to track the issue',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
-    img: 'https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     link: 'https://lama.dev',
+    images: [
+      { src: '/path/to/image1.jpg', alt: 'Image 1', caption: 'Image 1' },
+      { src: '/path/to/image2.jpg', alt: 'Image 2', caption: 'Image 2' },
+      { src: '/path/to/image3.jpg', alt: 'Image 3', caption: 'Image 3' },
+    ],
+
   },
 ];
 
@@ -79,13 +106,14 @@ const PortfolioPage = () => {
                     <Image src={item.img} alt="" fill />
                   </div> */}
 
-                  <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px] shadow-xl rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300">
-                    <Image
+                  <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[3\450px] xl:w-[600px] xl:h-[420px] shadow-xl rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300">
+                    {/* <Image
                       src={item.img}
                       alt=""
                       fill
                       className="w-full h-full object-cover"
-                    />
+                    /> */}
+                    <ReactCarousel images={item.images} />
                   </div>
                   <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                     {item.desc}
