@@ -106,6 +106,17 @@ const Navbar = () => {
             />
           </div>
         </Link>
+        <Link href="https://lahirudarshana.medium.com/">
+          <div className="relative   group ">
+            <Image
+              src="/medium.png"
+              alt=""
+              width={24}
+              height={24}
+              className="transition duration-300 ease-in-out transform group-hover:scale-150 "
+            />
+          </div>
+        </Link>
         <Link href="https://www.artstation.com/lahirudarshana8">
           <div className="relative   group ">
             <Image
