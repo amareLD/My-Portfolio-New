@@ -68,7 +68,7 @@ import Link from 'next/link';
 const Homepage = () => {
   return (
     <motion.div
-      className=" flex flex-col justify-center px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48   bg-gradient-to-b from-red-50 to-teal-300"
+      className=" flex flex-col justify-center px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48  "
       initial={{ y: '-200vh' }}
       animate={{ y: '0%' }}
       transition={{ duration: 1 }}
@@ -148,7 +148,7 @@ const Homepage = () => {
           </Link>
            
             <Link href="/contact" >
-              <button className="p-4 rounded-lg ring-1 ring-white bg-white transition-colors hover:bg-teal-400 hover:text-white hover:ring-white">
+              <button className="p-4 rounded-lg ring-1 ring-white bg-white text-black transition-colors hover:bg-teal-400 hover:text-white hover:ring-white">
                 Contact Me
               </button>
             </Link>
