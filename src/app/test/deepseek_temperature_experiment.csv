@@ -1,0 +1,3 @@
+Question,Temperature,Response,Response Time (s)
+My father only has one child. So who is my father's son's older brother?,0,ERROR: Cannot read properties of undefined (reading '0'),0
+My father only has one child. So who is my father's son's older brother?,1,ERROR: Cannot read properties of undefined (reading '0'),0
