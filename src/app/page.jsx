@@ -122,7 +122,7 @@ const Homepage = () => {
             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 lg:mb-6 text-center lg:text-left"
             style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}
           >
-            Hello👋, I'm <span className="text-white">Lahiru Darshana.</span>
+            Hello👋, I'm <span className="text-white dark:text-black">Lahiru Darshana.</span>
             <br />
             <motion.div
               variants={fadeIn('up', 0.4)}
@@ -131,7 +131,7 @@ const Homepage = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-4 lg:mb-6 text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] xl:text-[40px] font-secondary h-16 sm:h-20 lg:h-24 font-semibold uppercase leading-[1]"
             >
-              <span className="text-white mr-4">I am a</span>
+              <span className="text-white dark:text-black mr-4">I am a</span>
               <TypeAnimation
                 sequence={[
                   'AI/ML Enthusiast',
