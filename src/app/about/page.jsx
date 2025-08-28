@@ -42,22 +42,20 @@ const AboutPage = () => {
             <h1 className="font-bold text-[48px]">BIOGRAPHY🧬</h1>
             {/* BIOGRAPHY DESC */}
             <p className="text-[24px] text-justify">
-              ✌<br/>
-              I’m an undergraduate at the University of Sri Jayewardenepura in
-              the Faculty of Technology. I have good knowledge, experience, and
-              excitement in Full-stack development mostly in JavaScript- related
-              technologies and UI/UX design.And also I'm so passionate and
-              interested in Game development and Game design Because video
-              gaming is part of my life😁. I also like to do creative things and
-              I think I have the skill to do that. So currently I have a Good academic knowledge too. I’m always trying to update with new technologies and
-              continuously learning all the things currently doing as well as
-              what I would like to do in the future.👨🏻‍💻
+              Hi, I’m Lahirud 👋<br/>
+         I recently graduated with a Bachelor of Information and Communication Technology (BICT) Honours Degree Specialized in Software Technologies from the University of Sri Jayewardenepura with a Second Class Upper. Over the past two years, I’ve been working in the tech industry, gaining hands-on experience in full-stack development and expanding my knowledge across modern frameworks and technologies.<br/>
+
+My journey started with a passion for JavaScript-based development and UI/UX design, and it has since grown into building projects with Laravel, PHP, TypeScript, and WordPress including plugin development. Alongside my work, I’ve also explored game development and game design, something close to my heart as gaming has always been a part of my life. 🎮<br/>
+
+A major milestone in my career so far was my final year research, where I worked with my two colleagues on “The Connection Between Temperature Parameters and Emergent Behaviors in Large Language Models (LLMs).” This sparked my deep interest in AI and Machine Learning, and since then I’ve been actively learning, experimenting, and building projects in the AI/ML space.<br/>
+
+I see myself as a continuous learner who loves solving problems, building creative things, and staying curious about new technologies. Whether it’s crafting smooth user experiences, developing scalable applications, or exploring the future of AI-powered solutions, I’m always excited to take on new challenges. 🚀
             </p>
             {/* BIOGRAPHY QUOTE */}
             <span className="text-[20px] italic">◻▫What is "real"?▪◼</span>
             {/* BIOGRAPHY SIGN SVG*/}
-            <div className="self-end">
-              <svg
+                     <div className="self-end">
+                 <svg
                   width="200"
                   height="100"
                   viewBox="0 0 637 443"
@@ -125,81 +123,97 @@ const AboutPage = () => {
                 animate={isSkillRefInView ? {x: 0} : {}}
                 className="flex gap-4 flex-wrap text-[24px]"
             >
-              <div className="rounded  p-2  cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                JavaScript
-              </div>
-              <div className="rounded  p-2  cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                TypeScript
-              </div>
-              <div className="rounded  p-2  cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                React.js
-              </div>
-              <div className="rounded  p-2  cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Next.js
-              </div>
-              <div className="rounded  p-2  cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                HTML
-              </div>
-              <div className="rounded  p-2  cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Tailwind CSS
-              </div>
-              <div className="rounded  p-2  cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                MongoDB
-              </div>
-              <div className="rounded  p-2  cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                PostgreSQL
-              </div>
-              <div className="rounded  p-2  cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Node.js
-              </div>
-              {/* <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Nest.js
-              </div> */}
-              <div className="rounded  p-2  cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Express.js
-              </div>
-              <div className="rounded  p-2  cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Unreal Engine
-              </div>
-              <div className="rounded  p-2  cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Graphic design
-              </div>
-              {/* <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Apollo
-              </div> */}
-              <div className="rounded  p-2 cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Redux
-              </div>
-              <div className="rounded  p-2 cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Framer Motion
-              </div>
-              <div className="rounded  p-2  cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Three.js
-              </div>
-              <div className="rounded  p-2  cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                python
-              </div>
-              <div className="rounded  p-2  cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                C#
-              </div>
-              {/* <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Vite
-              </div> */}
-              {/* <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Docker
-              </div> */}
-              <div className="rounded  p-2  cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                AWS
-              </div>
-              <div className="rounded  p-2  cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Git
-              </div>
-              <div className="rounded  p-2  cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Adobe xd
-              </div>
-              <div className="rounded  p-2  cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Figma
-              </div>
+              <div className="rounded p-2 cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+  JavaScript
+</div>
+<div className="rounded p-2 cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+  TypeScript
+</div>
+<div className="rounded p-2 cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+  React.js
+</div>
+<div className="rounded p-2 cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+  Next.js
+</div>
+<div className="rounded p-2 cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+  HTML
+</div>
+<div className="rounded p-2 cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+  Tailwind CSS
+</div>
+<div className="rounded p-2 cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+  Node.js
+</div>
+<div className="rounded p-2 cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+  Express.js
+</div>
+<div className="rounded p-2 cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+  Laravel
+</div>
+<div className="rounded p-2 cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+  PHP
+</div>
+<div className="rounded p-2 cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+  WordPress
+</div>
+<div className="rounded p-2 cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+  WordPress Plugin Development
+</div>
+<div className="rounded p-2 cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+  MongoDB
+</div>
+<div className="rounded p-2 cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+  PostgreSQL
+</div>
+<div className="rounded p-2 cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+  Python
+</div>
+<div className="rounded p-2 cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+  C#
+</div>
+<div className="rounded p-2 cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+  TensorFlow
+</div>
+<div className="rounded p-2 cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+  PyTorch
+</div>
+<div className="rounded p-2 cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+  Machine Learning
+</div>
+<div className="rounded p-2 cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+  Natural Language Processing (NLP)
+</div>
+<div className="rounded p-2 cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+  Hugging Face
+</div>
+<div className="rounded p-2 cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+  Git
+</div>
+<div className="rounded p-2 cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+  AWS
+</div>
+<div className="rounded p-2 cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+  Figma
+</div>
+<div className="rounded p-2 cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+  Adobe XD
+</div>
+<div className="rounded p-2 cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+  Graphic Design
+</div>
+<div className="rounded p-2 cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+  Unreal Engine
+</div>
+<div className="rounded p-2 cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+  Redux
+</div>
+<div className="rounded p-2 cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+  Framer Motion
+</div>
+<div className="rounded p-2 cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+  Three.js
+</div>
+
             </motion.div>
             {/* SKILL SCROLL SVG */}
             <motion.svg
@@ -240,14 +254,123 @@ const AboutPage = () => {
               MY EXPERIENCE
             </motion.h1>
             {/* EXPERIENCE LIST */}
-            <motion.div
+               <motion.div
                 initial={{x: '-300px'}}
                 animate={isExperienceRefInView ? {x: '0'} : {}}
                 className=""
             >
-              {/* EXPERIENCE LIST ITEM */}
+              {/* EXPERIENCE LIST ITEM - Freelancer */}
               <div className="text-[24px] flex justify-between h-48">
                 {/* LEFT */}
+                <div className="w-1/3 ">
+                  {/* JOB TITLE */}
+                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                    Freelancer Software Developer
+                  </div>
+                  {/* JOB DESC */}
+                  <div className="p-3 text-[18px] mt-[10px] border-4 border-black rounded-md ">
+                    Working as a freelance software developer, building custom web applications, 
+                    WordPress solutions, and full-stack projects for various clients across different industries.
+                  </div>
+                  {/* JOB DATE */}
+                  <div className="p-3 text-teal-400 text-[18px] font-semibold">
+                    2023 - Present
+                  </div>
+                </div>
+                {/* CENTER */}
+                <div className="w-1/6 flex justify-center">
+                  {/* LINE */}
+                  <div className="w-1 h-full bg-gray-600 rounded relative">
+                    {/* LINE CIRCLE */}
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-teal-400 bg-white -left-2"></div>
+                  </div>
+                </div>
+                {/* RIGHT */}
+                <div className="w-1/3 "></div>
+              </div>
+
+              {/* EXPERIENCE LIST ITEM - Associate Software Engineer */}
+              <div className="text-[24px] flex justify-between h-48">
+                {/* LEFT */}
+                <div className="w-1/3 "></div>
+                {/* CENTER */}
+                <div className="w-1/6 flex justify-center">
+                  {/* LINE */}
+                  <div className="w-1 h-full bg-gray-600 rounded relative">
+                    {/* LINE CIRCLE */}
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-teal-400 bg-white -left-2"></div>
+                  </div>
+                </div>
+                {/* RIGHT */}
+                <div className="w-1/3 ">
+                  {/* JOB TITLE */}
+                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                    Associate Software Engineer
+                  </div>
+                  {/* JOB DESC */}
+                  <div className="p-3 text-[18px] mt-[10px] border-4 border-black rounded-md ">
+                    Worked on developing and maintaining software solutions, 
+                    contributing to team projects and gaining valuable industry experience 
+                    in modern development practices and technologies.
+                  </div>
+                  {/* JOB DATE */}
+                  <div className="p-3 text-teal-400 text-[18px] font-semibold">
+                    Feb 2025 - Oct 2025
+                  </div>
+                  {/* JOB COMPANY */}
+                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit mt-2">
+                    InnoTec Technologies
+                  </div>
+                </div>
+              </div>
+
+              {/* EXPERIENCE LIST ITEM - Intern Software Engineer */}
+              <div className="text-[24px] flex justify-between h-48">
+                {/* LEFT */}
+                <div className="w-1/3 ">
+                  {/* JOB TITLE */}
+                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                    Intern Software Engineer
+                  </div>
+                  {/* JOB DESC */}
+                  <div className="p-3 text-[18px] mt-[10px] border-4 border-black rounded-md ">
+                    Gained hands-on experience in software development, worked on real-world projects, 
+                    and learned industry best practices while contributing to development teams.
+                  </div>
+                  {/* JOB DATE */}
+                  <div className="p-3 text-teal-400 text-[18px] font-semibold">
+                    Jul 2024 - Jan 2025
+                  </div>
+                  {/* JOB COMPANY */}
+                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit mt-2">
+                    Neura IT
+                  </div>
+                </div>
+                {/* CENTER */}
+                <div className="w-1/6 flex justify-center">
+                  {/* LINE */}
+                  <div className="w-1 h-full bg-gray-600 rounded relative">
+                    {/* LINE CIRCLE */}
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-teal-400 bg-white -left-2"></div>
+                  </div>
+                </div>
+                {/* RIGHT */}
+                <div className="w-1/3 "></div>
+              </div>
+
+              {/* EXPERIENCE LIST ITEM - JavaScript Developer */}
+              <div className="text-[24px] flex justify-between h-48">
+                {/* LEFT */}
+                <div className="w-1/3 "></div>
+                {/* CENTER */}
+                <div className="w-1/6 flex justify-center">
+                  {/* LINE */}
+                  <div className="w-1 h-full bg-gray-600 rounded relative">
+                    {/* LINE CIRCLE */}
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-teal-400 bg-white -left-2"></div>
+                  </div>
+                </div>
+                {/* RIGHT */}
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
@@ -263,35 +386,12 @@ const AboutPage = () => {
                   <div className="p-3 text-teal-400 text-[18px] font-semibold">
                     2021 - Present
                   </div>
-                  {/* JOB COMPANY */}
-                  {/* <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Apple
-                  </div> */}
                 </div>
-                {/* CENTER */}
-                <div className="w-1/6 flex justify-center">
-                  {/* LINE */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
-                    {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-teal-400 bg-white -left-2"></div>
-                  </div>
-                </div>
-                {/* RIGHT */}
-                <div className="w-1/3 "></div>
               </div>
-              {/* EXPERIENCE LIST ITEM */}
+
+              {/* EXPERIENCE LIST ITEM - React & Next Developer */}
               <div className="text-[24px] flex justify-between h-48">
                 {/* LEFT */}
-                <div className="w-1/3 "></div>
-                {/* CENTER */}
-                <div className="w-1/6 flex justify-center">
-                  {/* LINE */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
-                    {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-teal-400 bg-white -left-2"></div>
-                  </div>
-                </div>
-                {/* RIGHT */}
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
@@ -308,15 +408,32 @@ const AboutPage = () => {
                   <div className="p-3 text-teal-400 text-[18px] font-semibold">
                     2022 - Present{' '}
                   </div>
-                  {/* JOB COMPANY */}
-                  {/* <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Microsoft
-                  </div> */}
                 </div>
+                {/* CENTER */}
+                <div className="w-1/6 flex justify-center">
+                  {/* LINE */}
+                  <div className="w-1 h-full bg-gray-600 rounded relative">
+                    {/* LINE CIRCLE */}
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-teal-400 bg-white -left-2"></div>
+                  </div>
+                </div>
+                {/* RIGHT */}
+                <div className="w-1/3 "></div>
               </div>
-              {/* EXPERIENCE LIST ITEM */}
+
+              {/* EXPERIENCE LIST ITEM - UI/UX Designer */}
               <div className="text-[24px] flex justify-between h-48">
                 {/* LEFT */}
+                <div className="w-1/3 "></div>
+                {/* CENTER */}
+                <div className="w-1/6 flex justify-center">
+                  {/* LINE */}
+                  <div className="w-1 h-full bg-gray-600 rounded relative">
+                    {/* LINE CIRCLE */}
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-teal-400 bg-white -left-2"></div>
+                  </div>
+                </div>
+                {/* RIGHT */}
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
@@ -330,34 +447,14 @@ const AboutPage = () => {
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-teal-400 text-[18px] font-semibold">
-                    2010 - 2019{' '}
+                    2020 - Present{' '}
                   </div>
                 </div>
-                {/* CENTER */}
-                <div className="w-1/6 flex justify-center">
-                  {/* LINE */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
-                    {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-teal-400 bg-white -left-2"></div>
-                  </div>
-                </div>
-                {/* RIGHT */}
-                <div className="w-1/3 "></div>
               </div>
-              {/* EXPERIENCE LIST ITEM */}
+
+              {/* EXPERIENCE LIST ITEM - Game Development */}
               <div className="text-[24px] flex justify-between h-48">
                 {/* LEFT */}
-                <div className="w-1/3 "></div>
-                {/* CENTER */}
-                <div className="w-1/6 flex justify-center">
-                  {/* LINE */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
-                    {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-teal-400 bg-white -left-2"></div>
-                  </div>
-                </div>
-
-                {/* RIGHT */}
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
@@ -370,17 +467,21 @@ const AboutPage = () => {
                     still learning a lot of things Game development and Game
                     design.{' '}
                   </div>
-
                   {/* JOB DATE */}
                   <div className=" p-3 text-teal-400 text-[18px] font-semibold">
                     2022 - Present{' '}
                   </div>
-
-                  {/* JOB COMPANY */}
-                  {/* <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Microsoft
-                  </div> */}
                 </div>
+                {/* CENTER */}
+                <div className="w-1/6 flex justify-center">
+                  {/* LINE */}
+                  <div className="w-1 h-full bg-gray-600 rounded relative">
+                    {/* LINE CIRCLE */}
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-teal-400 bg-white -left-2"></div>
+                  </div>
+                </div>
+                {/* RIGHT */}
+                <div className="w-1/3 "></div>
               </div>
             </motion.div>
           </div>

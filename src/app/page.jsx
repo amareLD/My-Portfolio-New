@@ -134,12 +134,15 @@ const Homepage = () => {
               <span className="text-white mr-4">I am a</span>
               <TypeAnimation
                 sequence={[
+                  'AI/ML Enthusiast',
+                  2000,
                   'Full-stack Developer',
                   2000,
                   'UI/UX Designer',
                   2000,
                   'Web Designer',
                   2000,
+                  
                 ]}
                 speed={50}
                 className="text-accent"

@@ -70,7 +70,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
+    <div className=" h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
       {/* LINKS */}
 
       <div className="hidden md:flex gap-4 w-1/3">
@@ -94,8 +94,8 @@ const Navbar = () => {
         </Link>
       </div>
       {/* SOCIAL */}
-      <div className="hidden md:flex gap-4 w-1/3">
-        <Link href="https://github.com/amareLD">
+      <div className="hidden md:flex gap-4 w-1/3  justify-between">
+      <div className=" md:flex gap-4 items-center"> <Link href="https://github.com/amareLD">
           <div className="relative   group ">
             <Image
               src="/github.png"
@@ -183,6 +183,8 @@ const Navbar = () => {
             />
           </div>
         </Link>
+        </div>
+       
         <Button />
       </div>
       {/* RESPONSIVE MENU */}
@@ -225,7 +227,7 @@ const Navbar = () => {
                 <Link href={link.url}>{link.title}</Link>
               </motion.div>
             ))}
-            <div className="bg-white bg-opacity-90 h-20 md:h-16 items-center justify-center flex gap-3 md:w-2/3 w-full rounded p-0.5">
+            <div className="bg-red-300 bg-opacity-90 h-20 md:h-16 items-center justify-center flex gap-3 md:w-2/3 w-full rounded p-0.5">
               <Link href="https://github.com/amareLD">
                 <div className="relative   group ">
                   <Image
